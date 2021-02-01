@@ -1,0 +1,121 @@
+html{
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 98%);
+}
+*{
+    box-sizing: inherit;
+    
+    font-family: 'Poppins', sans-serif;
+}
+
+/*---------------------------------------------------*/
+.bluebox{
+    border-top: 3px solid hsl(212, 86%, 64%);
+}
+.redbox{
+    border-top: 3px solid hsl(0, 78%, 62%);
+}
+.greenbox{
+    border-top: 3px solid hsl(180, 62%, 55%);
+}
+.yellowbox{
+    border-top: 3px solid hsl(34, 97%, 64%);
+}
+.box{
+    background-color: white;
+    box-shadow: 0 0 10px 0 hsl(229, 6%, 66%);
+    text-align: left;
+    max-width: 450px;
+    height: 275px;
+    padding: 5%;
+}
+
+.title__box{
+    font-weight: 500;
+    
+}
+.description__box{
+    line-height: 2;
+    font-weight: 300;
+
+}
+.icon__box{
+    margin-left: 80%;
+    margin-top: 3%;
+}
+
+/*----------------------------------------------------*/
+
+.title{
+    text-align: center;
+    font-weight: 400;
+}
+.title__span{
+    font-weight: 600;
+}
+.title__description{
+    text-align: center;
+}
+
+
+@media (max-width: 900px){
+   
+    .mainbox{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        max-width: 600px;
+    }
+    .box{     
+        margin-top: 8%;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        border-radius: 7px;
+        padding: 3%;
+    }
+   
+
+}
+
+@media (min-width:901px){
+    .title__description{
+        content: \data ; white-space: pre;
+    }
+    .mainbox{
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 28vw 28vw 28vw;
+        grid-template-rows: 300px 300px;
+        column-gap: 15px;
+        row-gap: 15px;
+        margin: 3% 10% 10% 10%;
+        width: 80%;
+    }
+    .box{
+        border-radius: 7px;
+        padding: 3%;
+
+    }
+    .bluebox{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        margin-top: 30%;
+    }
+    .redbox{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start:1 ;
+        grid-row-end:2 ;
+    }
+    .greenbox{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        margin-top: 30%;
+    }
+    .yellowbox{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start:2 ;
+        grid-row-end:3 ;
+    }
+}
