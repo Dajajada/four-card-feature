@@ -31,6 +31,7 @@ html{
 }
 
 .title__box{
+    
     font-weight: 500;
     
 }
@@ -41,12 +42,13 @@ html{
 }
 .icon__box{
     margin-left: 80%;
-    margin-top: 3%;
+    margin-top: 2%;
 }
 
 /*----------------------------------------------------*/
 
 .title{
+    margin-top: 4%;
     text-align: center;
     font-weight: 400;
 }
@@ -85,10 +87,10 @@ html{
         justify-content: center;
         display: grid;
         grid-template-columns: 28vw 28vw 28vw;
-        grid-template-rows: 300px 300px;
+        grid-template-rows: 275px 275px;
         column-gap: 15px;
-        row-gap: 15px;
-        margin: 3% 10% 10% 10%;
+        row-gap: 25px;
+        margin: 4% 10% 10% 10%;
         width: 80%;
     }
     .box{
